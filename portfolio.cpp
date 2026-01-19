@@ -6,8 +6,11 @@
 #include <string>
 #include <numeric>
 #include <chrono>
+#include <fstream>
+#include <iostream>
+#include <cctype>
 
-
+# 
 
 /*
 functions needed
@@ -95,6 +98,7 @@ struct SchwabImport{
     std::vector<CashflowType> cashflows;
     std::vector<Date> dates;
 };
+
 
 SchwabImport load_schwab_csv(const std::string& path)
 {
